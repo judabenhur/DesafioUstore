@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>contato</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <head>
+    <body>
+        
+<form  name="login">    <div  align="center">      <center> Iniciar  Sessão.<br>       
+<table  border="0"  bordercolor="#008080"  cellpadding="3"  cellspacing="0"  width="225"> 
+<tbody>        
+<tr>              
+<td  align="center"><font  face="Verdana,  Verdana,  Times,  serif"  size="2pt"><strong>ID</strong></font></td>           
+<td  align="center"><input  name="username"  size="20"  type="text"></td>            </tr>            <tr>             
+<td  align="center"><font  face="Verdana,  Verdana,  Times,  serif"  size="2pt"><strong>Senha:</strong></font></td>       
+<td  align="center"><input  name="password"  size="20"  type="password"></td>              
+<td  align="center"  colspan="2"><input  onclick="Login()"  type="button"  value="Entrar"></td>         
+</tr>          
+</tbody>       
+</table>  
+</center>
+            </div>  
+       </form>
+            <script>    
+              function  Login(){  var  done=0;  
+              var username=document.login.username.value;  username=username.toLowerCase();
+              var password=document.login.password.value; password=password.toLowerCase();
+                if (username=="admin"  &&  password=="admin")  {  
+                     window.location="Mensagem.html";  done=1;  
+                     }  
+                  else  if(done==0)  {  
+                      alert("Usuário  e/ou  senha  incorretos");  
+                      }  
+                    }  
