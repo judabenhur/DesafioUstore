@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+        
+        <title> Login Form </title>
+
+</head>
+<body>
+        <div class="login">
+                <form id="form" name="form" method="post" action="doLogin.php">
+                        <div class="div-align-center">
+                                <img id="logoLogin" src="images/logoLogin.png" alt="Logo">
+                        </div>
+                        <input aria-readonly="false" id="username" name="username" autocomplete="false" placeholder="Usuário" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all username-input ui-state-hover" type="text">
+
+                        <input id="password" name="password" class="ui-inputfield ui-password ui-widget ui-state-default ui-corner-all password-input" autocomplete="false" placeholder="Senha" type="password">
+                        <div class="div-align-center">
+                                <button id="buttonSubmit" name="buttonSubmit" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" type="submit"><span class="ui-button-text ui-c">Acessar</span></button>
+                        </div>
+                </form>
+        </div>
+        <div class="div-align-right">
+
+                <button onclick="window.location.href='/senha.php'" id="buttonSenha" name="buttonSenha" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" type="button"><span class="ui-button-text ui-c">Esqueci a senha</span></button>
+
+                <button onclick="window.location.href='/registrar.php'" id="buttonRegistrar" name="buttonRegistrar" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" type="button"><span class="ui-button-text ui-c">Criar conta</span></button>
+        </div>
+
+
+</body>
+</html>
